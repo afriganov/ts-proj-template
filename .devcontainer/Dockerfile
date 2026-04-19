@@ -2,11 +2,9 @@ ARG VARIANT=24-bookworm
 FROM  node:${VARIANT}
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    build-essential \
     curl \
     git \
     zsh \
-    jq \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
  
