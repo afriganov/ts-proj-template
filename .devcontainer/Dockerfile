@@ -11,7 +11,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
  
 
-RUN npm install -g typescript prettier nodemon tsx pnpm
+RUN npm install -g typescript prettier pnpm
 
 RUN chsh -s /usr/bin/zsh root
 RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
